@@ -1,37 +1,38 @@
 # Site
-repository: Git repository where your resume will be hosted, only required if you are hosting on GitHub (eg. sproogen/modern-resume-theme)
+repository: hyili/hyili.github.io
 # favicon: Directory of your favicon (eg. images/favicon.ico)(optional)
 
 # Content configuration version
 version: 2
 
 # Personal info
-name: Your Name
-title: Your job title
-email: Your email (optional)
+name: 李厚誼
+title: TBD
+# job_title
+email: hyili@hyili.idv.tw
 # email_title: Email (Email title override)
-phone: Your phone number (optional)
+phone: TBD
 # phone_title: Phone (Phone title override)
-website: Your website (eg. https://google.com)(optional)
+website: https://hyili.github.io
 # website_title: Web (Website title override)
 
 # Dark Mode (true/false/never)
 darkmode: false
 
 # Social links
-twitter_username: jekyllrb
-github_username:  jekyll
-stackoverflow_username: "00000001"
-dribbble_username: jekyll
-facebook_username: jekyll
-flickr_username: jekyll
-instagram_username: jekyll
-linkedin_username: jekyll
-xing_username: jekyll
-pinterest_username: jekyll
-youtube_username: jekyll
-googleplus_username: +jekyll
-orcid_username: 0000-0000-0000-0000
+#twitter_username: jekyllrb
+github_username:  hyili
+#stackoverflow_username: "00000001"
+#dribbble_username: jekyll
+facebook_username: hyilihyili
+#flickr_username: jekyll
+#instagram_username: jekyll
+linkedin_username: TBD
+#xing_username: jekyll
+#pinterest_username: jekyll
+#youtube_username: jekyll
+#googleplus_username: +jekyll
+#orcid_username: 0000-0000-0000-0000
 
 # Additional icon links
 additional_links:
@@ -55,30 +56,41 @@ about_content: | # this will include new lines to allow paragraphs
   Write an awesome description about yourself here, this supports markdown, so you can add [links](http://foobar.com) and highlight things <mark>like this</mark>.
 
   You can even add paragraphs by using empty lines like this and add anything else [markdown](https://www.markdownguide.org/getting-started#what-is-markdown) supports such as
-    - Lists
-    - Tables
-    - <a href="google.com">Links</a>
-    - Images ![alt text](/images/landscape-trees.jpg "Trees")
+      #    - Lists
+      #    - Tables
+      #    - <a href="google.com">Links</a>
+      #    - Images ![alt text](/images/landscape-trees.jpg "Trees")
 
 content:
   - title: Projects # Title for the section
     layout: list # Type of content section (list/text)
     content:
       - layout: left
-        title: Project name
-        link: Link to project (eg. sproogen.github.io/modern-resume-theme)(optional)
-        link_text: Link Text
+        title: Tree Walker
+        link: https://github.com/hyili/Tree_Walker
+        link_text: Tree Walker Github Repo
         additional_links:
-          - title:  Github page for project (eg. sproogen/modern-resume-theme)
+          - title:  Github page for project
             icon: fab fa-github
-            url: Link to project (eg. sproogen.github.io/modern-resume-theme)(optional)
-          - title:  Github page for project (eg. sproogen/modern-resume-theme)
-            icon: fab fa-github
-            url: Link to project (eg. sproogen.github.io/modern-resume-theme)(optional)
+            url: https://github.com/hyili/Tree_Walker
         quote: >
-          Short overview of the project (optional)
+          A web crawler backend for website status monitoring based on Python3 requests
         description: | # this will include new lines to allow paragraphs
-          Description about the work on/with the project
+          This web crawler backend is developed during my intern in ITRI. Which is initially targeting on broken-link detection, and website status monitoring.
+          It was designed in multithreaded and master-worker architecture, which supports Restful API input and MSSQL Database ouput.
+      - layout: left
+        title: GreedyZnake
+        link: https://github.com/hyili/GreedyZnake
+        link_text: GreedyZnake Github Repo
+        additional_links:
+          - title:  Github page for project
+            icon: fab fa-github
+            url: https://github.com/hyili/GreedyZnake
+        quote: >
+          A terminal snake game with AI player based on C++ ncurses lib
+        description: | # this will include new lines to allow paragraphs
+          This project was inspired by AI gaming courses in NCTU and mtoyoda/sl. Which is designed for relaxing.
+          An AI-controlled snake automatically collects snacks and grows up its body. You can just watch its play or take control of it.
   - title: Experience
     layout: list
     content:
